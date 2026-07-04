@@ -1,0 +1,69 @@
+name: Validate Design System
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate tokens.json is valid JSON
+        run: |
+          echo "Checking tokens/tokens.json..."
+          python3 -c "import json; json.load(open('tokens/tokens.json'))"
+          echo "tokens.json is valid."
+
+      - name: Check component completeness
+        run: |
+          exit_code=0
+          for dir in components/*/; do
+            for comp in "$dir"*/; do
+              [ -d "$comp" ] || continue
+              name=$(basename "$comp")
+
+              if [ ! -f "$comp/spec.md" ]; then
+                echo "MISSING: $comp/spec.md"
+                exit_code=1
+              fi
+
+              if ! ls "$comp"/*.svg 1>/dev/null 2>&1 && ! ls "$comp"/*.png 1>/dev/null 2>&1; then
+                echo "MISSING: $comp needs at least an .svg or .png"
+                exit_code=1
+              fi
+            done
+          done
+
+          if [ $exit_code -eq 0 ]; then
+            echo "All components have required files."
+          fi
+          exit $exit_code
+
+      - name: Check reference images are cataloged
+        run: |
+          exit_code=0
+          for img in references/ref*.png references/ref*.jpg references/ref*.jpeg; do
+            [ -f "$img" ] || continue
+            basename_img=$(basename "$img")
+            if ! grep -q "$basename_img" references/REFERENCES.md; then
+              echo "UNCATALOGED: $basename_img not found in references/REFERENCES.md"
+              exit_code=1
+            fi
+          done
+
+          if [ $exit_code -eq 0 ]; then
+            echo "All reference images are cataloged."
+          fi
+          exit $exit_code
+
+      - name: Validate tokens.css exists if tokens.json exists
+        run: |
+          if [ -f "tokens/tokens.json" ] && [ ! -f "tokens/tokens.css" ]; then
+            echo "WARNING: tokens.json exists but tokens.css is missing. Keep them in sync."
+          else
+            echo "Token files in sync."
+          fi
