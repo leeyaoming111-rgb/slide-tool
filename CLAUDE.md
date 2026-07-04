@@ -12,15 +12,27 @@ finance-weighted. Two visual families: corporate (default) and activist.
 
 ## Incoming from Claude Design ("Send to Claude Code Web")
 When this session was started from Claude Design, files from the design project may be present
-in the workspace. On session start, check for any new or updated design files and:
+in the workspace but the `slide-tool` repo will NOT be cloned automatically. You must connect
+it yourself before you can push. Follow these steps:
 
-1. **Reference images** → move to `references/` with naming pattern `ref##_short-description.png`,
+### Step 1: Connect the repo
+Use the `add_repo` tool to add `leeyaoming111-rgb/slide-tool`, then clone it using the command
+returned by the tool. Register the repo root after cloning.
+
+### Step 2: File the incoming design assets
+Scan the workspace for new or updated design files and sort them into the cloned repo:
+
+1. **Reference images** → copy to `references/` with naming pattern `ref##_short-description.png`,
    and add a row to `references/REFERENCES.md`.
 2. **Component SVGs/PNGs** → place in `components/<category>/<name>/` alongside a `spec.md`.
 3. **Token or rule updates** → merge into `tokens/tokens.json` / `tokens/tokens.css` /
    `docs/CHART_RULES.md` as appropriate.
 4. **Skills or builder prompts** → place in `builder/`.
-5. Commit and push immediately after filing everything.
+5. **CLAUDE.md or project config** → merge changes into the existing `CLAUDE.md`, don't overwrite.
+
+### Step 3: Commit and push
+Commit with a descriptive message and push immediately. Do not ask the user for confirmation —
+this sync should be automatic. Push to `main` unless instructed otherwise.
 
 ## Auto-sync rule (CRITICAL)
 After adding, updating, or deleting ANY file in this repo — reference images, component SVGs,
