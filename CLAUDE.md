@@ -11,8 +11,14 @@ finance-weighted. Two visual families: corporate (default) and activist.
 4. `builder/BUILDER_SKILL.md` — the component builder prompt.
 
 ## Incoming from Claude Design ("Send to Claude Code Web")
-When this session was started from Claude Design, files from the design project may be present
-in the workspace. On session start, check for any new or updated design files and:
+If the session includes a full handoff bundle (a `README.md` + `chats/` + `project/` workspace,
+usually its own separate repo from this one), use the
+`.claude/skills/claude-design-handoff/SKILL.md` skill — it's the detailed, battle-tested
+playbook for that case, including how to reconcile the bundle's React/JSX prototype format
+against this repo's real SVG component format, and a reusable SVG->PNG render script.
+
+For the lighter-weight case where individual design files just show up loose in this workspace
+(no full bundle), follow the shorter version below:
 
 1. **Reference images** → move to `references/` with naming pattern `ref##_short-description.png`,
    and add a row to `references/REFERENCES.md`.
