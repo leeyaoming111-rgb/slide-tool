@@ -82,3 +82,28 @@ locked by formatting time, so they are the best candidates for this library.
     evidence at once": several small exhibits, each with its own tight header and unit note,
     packed onto one solid-navy slide (`ref14`, `ref16`).
 22. **No em dashes in slide copy.** Use colons, commas, semicolons, or a new sentence instead.
+
+## Radar and combo charts (construction rules borrowed from bklit-ui's code, not its look)
+
+23. **Radar: normalise every axis to 0-100 before plotting.** Raw metrics (revenue in $m,
+    NPS in points, share in %) are not comparable as radii. Score each metric 0-100 first and
+    keep the scoring table in the spec's data notes so the chart can be re-derived. The plot
+    uses one shared 0-100 scale; never mix raw units on the spokes.
+24. **Radar: first spoke at 12 o'clock.** Spoke angle for metric i of n is
+    `i * 360/n - 90` degrees. The most important metric goes on the vertical spoke; the rest
+    read clockwise. Spoke labels sit just outside the outer ring (radius + ~24px), anchored
+    middle.
+25. **Radar polygon styling.** Series polygon: 2px stroke in the series colour, same-colour
+    fill at ~15% opacity, `stroke-linejoin: round`. Vertex dots get a 2px stroke in the slide
+    background colour so they read as points against the fill. Grey the field, colour the
+    hero (rule 4) applies: competitor polygons grey, our polygon navy/accent.
+26. **Radar grid: 4-5 rings maximum,** faint (`--gridline`), with ring values labelled once
+    along the vertical spoke only, not on every spoke.
+27. **Combo chart (bars + line): one scale per unit, never per series.** Group series by unit;
+    absolute values (revenue bars) own the left axis, the rate series (margin %, growth %)
+    owns the right axis. Two axes maximum. Style the right axis in the line's colour so
+    ownership is unambiguous.
+28. **Combo chart axis maxima are computed, then rounded to a nice tick.** If bars are
+    stacked, the left-axis max is the largest *stack sum* per period, not the largest single
+    segment, compared against any same-axis line values; take the overall max and round up to
+    a clean interval (steps of 1/2/2.5/5 x 10^n) so gridlines land on round numbers.
