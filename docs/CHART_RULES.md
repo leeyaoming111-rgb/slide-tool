@@ -66,3 +66,19 @@ Native spreadsheet charts recalculate; an exported SVG does not. Rule of thumb: 
 numbers are still moving, build in the spreadsheet. Once the numbers are locked and it needs to
 look perfect, hand it over as SVG. Football fields, waterfalls and scenario bars are usually
 locked by formatting time, so they are the best candidates for this library.
+
+## Orientation, tables and copy (added from user review, see `references/REFERENCES.md`)
+
+18. **Bar charts and waterfalls read well flipped sideways.** A horizontal bar chart suits a
+    ranking or scenario list where the label sits on the left (`ref11`). A waterfall/bridge can
+    run as a vertical stack of horizontal lever bars connecting to a running total, rather than
+    the classic left-to-right column bridge (`ref10`).
+19. **Row banding, not rules, for long tables/timelines.** Alternate white and light-grey row
+    bands to group rows instead of drawing a line under each one (`ref11`).
+20. **Tables use horizontal rules only.** A rule under the header row, a rule at the foot, and
+    thin rules between rows if needed. No outside border, no vertical lines, no cell fills except
+    optional row banding.
+21. **Navy-background dense slides** are the right tool when the story is "look at all this
+    evidence at once": several small exhibits, each with its own tight header and unit note,
+    packed onto one solid-navy slide (`ref14`, `ref16`).
+22. **No em dashes in slide copy.** Use colons, commas, semicolons, or a new sentence instead.

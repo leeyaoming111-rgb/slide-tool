@@ -19,11 +19,11 @@ tokens/        tokens.json + tokens.css   (the palette, type, spacing — machin
 docs/          CHART_RULES.md             (the house formatting rules)
 references/    saved inspiration + REFERENCES.md catalog + model-reference.xlsx
 components/
-  containers/  callouts, KPI tiles, comparison cards
-  tables/      stat tables, bear/base/bull, scorecards
-  charts-finance/  football-field (done), waterfall, scenario bars, build-up table
-  diagrams/    value-driver tree, 2x2, value chain, process
-  headlines/   action-title and kicker patterns
+  containers/  callouts, KPI tiles, takeaway strips, comparison cards (done)
+  tables/      stat tables, bear/base/bull scenario tables (done)
+  charts-finance/  football-field, waterfall, scenario bars, build-up table (done)
+  diagrams/    value-driver tree, 2x2, value chain, process (not started)
+  headlines/   action-title and kicker patterns (done)
 builder/       BUILDER_SKILL.md           (prompt for adding components later)
 ```
 
@@ -39,5 +39,13 @@ restraint and legibility over characterful display fonts, and Arial fallback mea
 never breaks on a machine without Inter installed. Optional Source Serif 4 for emphasis lines.
 
 ## Status
-v0.1 — skeleton, tokens, chart rules, reference library, and the football field are in.
-Next: waterfall/bridge, scenario bars, build-up table.
+v0.2 — tokens, chart rules, reference library, and all four v1 finance charts are in (football
+field, waterfall, scenario bars, build-up table), plus headlines, containers, and tables.
+Next: the diagram primitives (value-driver tree, 2x2, value chain, process) are still unbuilt.
+
+Built so far:
+- `components/headlines/` &mdash; `kicker/`, `action-title/`
+- `components/containers/` &mdash; `kpi-tile/`, `callout/`, `takeaway-strip/`, `comparison-card/`
+- `components/tables/` &mdash; `stat-table/`, `scenario-table/`
+- `components/charts-finance/` &mdash; `football-field/`, `waterfall/`, `scenario-bars/`, `build-up-table/`
+- `components/diagrams/` &mdash; not started

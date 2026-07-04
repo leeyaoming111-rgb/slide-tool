@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="Inter, Arial, sans-serif">
+  <!-- ============ case-design-system / headlines / action-title ============
+       MBB rule: an action title states the CONCLUSION, not the category.
+       "Revenue will grow to $300m by 2015" -- never just "Revenue".
+       Two variants shown stacked; delete the one you don't need before pasting.
+       Concrete hex so this pastes into PowerPoint as editable, portable text boxes. -->
+
+  <text x="900" y="20" font-size="10" font-weight="600" letter-spacing="0.8" fill="#5B6B79" text-anchor="end">VARIANT=&#34;BAR&#34; (DEFAULT)</text>
+
+  <!-- variant: bar -- thick navy rule + kicker + title (ref01) -->
+  <rect x="60" y="30" width="4" height="66" rx="2" fill="#1F3A52"/>
+  <text x="84" y="46" font-size="12" font-weight="600" letter-spacing="1.2" fill="#1F3A52">FINANCE</text>
+  <text x="84" y="76" font-size="22" font-weight="700" fill="#14233A">Revenue will grow to $300m by 2015</text>
+  <text x="84" y="100" font-size="14" font-weight="400" fill="#5B6B79">Driven by 22% increase in ARPU/year and rapid acquisition of new users</text>
+
+  <line x1="0" y1="128" x2="960" y2="128" stroke="#C9D2DA" stroke-width="1" stroke-dasharray="2 4"/>
+
+  <text x="900" y="152" font-size="10" font-weight="600" letter-spacing="0.8" fill="#5B6B79" text-anchor="end">VARIANT=&#34;RULE&#34;</text>
+
+  <!-- variant: rule -- inline "Kicker | Title", optional logo slot, hairline rule underneath (ref03/ref07) -->
+  <text x="60" y="196" font-size="22" font-weight="700" fill="#2E6FB0">Impact</text>
+  <text x="146" y="196" font-size="22" font-weight="400" fill="#C9D2DA">|</text>
+  <text x="168" y="196" font-size="22" font-weight="400" fill="#14233A">ATTACH&#201; generates $6.6M in 3-year revenue</text>
+  <rect x="854" y="170" width="66" height="28" rx="3" fill="#F4F6F7" stroke="#C9D2DA" stroke-width="1"/>
+  <text x="887" y="188" font-size="9" font-weight="600" letter-spacing="0.6" fill="#5B6B79" text-anchor="middle">LOGO</text>
+  <text x="60" y="222" font-size="14" font-weight="400" fill="#5B6B79">Discounted cash flow and trading comps both point above the current price</text>
+  <rect x="60" y="238" width="860" height="2" fill="#14233A"/>
+
+  <text x="60" y="284" font-size="10" font-style="italic" fill="#5B6B79">accentKicker colours the kicker word with the hero accent (or signal, in activist mode); logo is optional.</text>
+</svg>

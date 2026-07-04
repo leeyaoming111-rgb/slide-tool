@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 132" font-family="Inter, Arial, sans-serif">
+  <!-- ============ case-design-system / containers / takeaway-strip ============
+       A single full-width navy bar with centred white text -- the strong close for
+       a big exhibit: the one sentence the reader should leave with (ref01). In
+       activist mode (data-theme="activist") it renders on the black panel instead.
+       Concrete hex so this pastes into PowerPoint as an editable, portable shape. -->
+
+  <!-- corporate (default) -->
+  <rect x="0" y="0" width="860" height="56" fill="#1F3A52"/>
+  <text x="430" y="34" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Driven by 22% increase in ARPU/year, and rapid acquisition of new users</text>
+
+  <!-- activist -->
+  <rect x="0" y="76" width="860" height="56" fill="#111111"/>
+  <text x="430" y="110" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="middle">Base-case UK cash flows service peak debt 2.4x over</text>
+</svg>

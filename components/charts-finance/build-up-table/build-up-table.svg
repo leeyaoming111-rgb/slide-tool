@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 212" font-family="Inter, Arial, sans-serif">
+  <!-- ============ case-design-system / charts-finance / build-up-table ============
+       A bottom-up arithmetic table that shows how a headline number is built
+       (ARPU x users = revenue), with a green-highlighted "Change" row and a navy
+       header band; the deep-navy heroColumn marks the headline result (ref01).
+       The reader should be able to reconstruct the number. Concrete hex so this
+       pastes into PowerPoint as editable, portable shapes. -->
+
+  <!-- header row -->
+  <rect x="0" y="0" width="126" height="50" fill="#F4F6F7"/>
+  <rect x="126" y="0" width="191.3" height="50" fill="#1F3A52"/>
+  <text x="221.65" y="30" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">ARPU / year</text>
+  <rect x="317.3" y="0" width="191.3" height="50" fill="#1F3A52"/>
+  <text x="412.95" y="30" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle"># of Users</text>
+  <rect x="508.6" y="0" width="191.4" height="50" fill="#163041"/>
+  <text x="604.3" y="30" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Revenue (NZD)</text>
+
+  <!-- row 1: 2010 -->
+  <rect x="0" y="50" width="126" height="54" fill="#F4F6F7"/>
+  <text x="63" y="82" font-size="13" fill="#14233A" text-anchor="middle">2010</text>
+  <text x="221.65" y="82" font-size="13" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">$290</text>
+  <text x="412.95" y="82" font-size="13" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">27,000</text>
+  <text x="604.3" y="82" font-size="13" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">$7.8 mil</text>
+  <line x1="126" y1="104" x2="700" y2="104" stroke="#C9D2DA" stroke-width="1"/>
+
+  <!-- row 2: 2015 -->
+  <text x="63" y="136" font-size="13" fill="#14233A" text-anchor="middle">2015</text>
+  <text x="221.65" y="136" font-size="13" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">$355</text>
+  <text x="412.95" y="136" font-size="13" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">864,000</text>
+  <text x="604.3" y="136" font-size="13" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">$306.7 mil</text>
+  <line x1="126" y1="158" x2="700" y2="158" stroke="#C9D2DA" stroke-width="1"/>
+
+  <!-- row 3: Change (change: true) -->
+  <rect x="0" y="158" width="126" height="54" fill="#F4F6F7"/>
+  <text x="63" y="190" font-size="13" fill="#14233A" text-anchor="middle">Change</text>
+  <rect x="126" y="158" width="191.3" height="54" fill="#C9E7D6"/>
+  <text x="221.65" y="190" font-size="13" font-weight="700" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">22%</text>
+  <rect x="317.3" y="158" width="191.3" height="54" fill="#C9E7D6"/>
+  <text x="412.95" y="190" font-size="13" font-weight="700" fill="#14233A" text-anchor="middle">3x then 2x</text>
+  <rect x="508.6" y="158" width="191.4" height="54" fill="#2E8B6F"/>
+  <text x="604.3" y="190" font-size="13" font-weight="700" fill="#14233A" text-anchor="middle" font-variant-numeric="tabular-nums">+$298.9 mil</text>
+  <line x1="126" y1="212" x2="700" y2="212" stroke="#C9D2DA" stroke-width="1"/>
+</svg>

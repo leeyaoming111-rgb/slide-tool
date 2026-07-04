@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 200" font-family="Inter, Arial, sans-serif">
+  <!-- ============ case-design-system / containers / callout ============
+       A labelled box that pulls one idea out of the flow. tone sets the meaning
+       (neutral navy header by default); border="dashed" is for an assumption /
+       annotation box (ref02, ref08). Concrete hex so this pastes into PowerPoint
+       as editable, portable shapes. -->
+
+  <!-- tone="neutral" border="solid" (default) -->
+  <rect x="0" y="0" width="260" height="190" rx="6" fill="#FFFFFF" stroke="#C9D2DA" stroke-width="1"/>
+  <rect x="1" y="1" width="258" height="34" fill="#1F3A52"/>
+  <text x="130" y="23" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Key Model Driver</text>
+  <text x="20" y="66" font-size="13" fill="#14233A">TAM growth of 12% vs.</text>
+  <text x="20" y="85" font-size="13" fill="#14233A">management&#8217;s 40%.</text>
+
+  <!-- tone="negative" border="solid" -->
+  <rect x="294" y="0" width="260" height="190" rx="6" fill="#FFFFFF" stroke="#C9D2DA" stroke-width="1"/>
+  <rect x="295" y="1" width="258" height="34" fill="#C0473E"/>
+  <text x="424" y="23" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Risks</text>
+  <text x="314" y="66" font-size="13" fill="#14233A">Momentum has accelerated</text>
+  <text x="314" y="85" font-size="13" fill="#14233A">following high-profile signings.</text>
+
+  <!-- tone="neutral" border="dashed" (assumption / annotation box) -->
+  <rect x="588" y="0" width="260" height="190" rx="6" fill="#FFFFFF" stroke="#1F3A52" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="608" y="26" font-size="13" font-weight="700" fill="#1F3A52">Underlying Assumptions</text>
+  <text x="608" y="60" font-size="13" fill="#14233A">15% take rate, 3-year ramp,</text>
+  <text x="608" y="79" font-size="13" fill="#14233A">consistent with management&#8217;s low case.</text>
+</svg>

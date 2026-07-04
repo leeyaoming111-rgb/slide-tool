@@ -13,20 +13,94 @@
   --positive: #2E8B6F;
   --positive-bg: #C9E7D6;
   --negative: #C0473E;
+  --negative-bg: #F3D8D5;
   --caution: #E0A13C;
+  --caution-bg: #F7E8CC;
   --white: #FFFFFF;
 
   /* activist palette (optional, high-contrast) */
   --black: #111111;
   --signal: #F5E003;
 
+  /* semantic aliases (use these in components; swap automatically under [data-theme="activist"]) */
+  --text-title: var(--ink);
+  --text-body: var(--ink);
+  --text-muted: var(--slate);
+  --text-on-fill: var(--white);
+  --surface-page: var(--white);
+  --surface-panel: var(--panel);
+  --fill-primary: var(--navy);
+  --fill-deep: var(--navy-deep);
+  --hero: var(--accent);
+  --border-faint: var(--gridline);
+  --axis: var(--gridline);
+
+  /* bear / base / bull header fills (fixed mapping, see ScenarioTable) */
+  --bear: var(--negative);
+  --base: var(--accent);
+  --bull: var(--positive);
+
   /* type */
   --font: Inter, Arial, sans-serif;
   --font-serif: "Source Serif 4", Georgia, serif;
 
+  /* type weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-black: 800;
+
+  /* type scale (px, at the native 960x540 slide frame) */
+  --fs-action-title: 22px;
+  --fs-kicker: 12px;
+  --fs-chart-title: 15px;
+  --fs-label: 13px;
+  --fs-value: 12px;
+  --fs-axis: 11px;
+  --fs-source: 10px;
+  --fs-big-number: 40px;
+  --tracking-kicker: 1.2px;
+  --lh-tight: 1.1;
+  --lh-snug: 1.25;
+  --lh-normal: 1.45;
+
   /* space */
   --unit: 4px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
   --gutter: 16px;
   --panel-pad: 20px;
+  --slide-margin: 48px;
+
+  /* radius (keep subtle — bars 3px max) */
   --bar-corner: 3px;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+
+  /* borders */
+  --border-hairline: 1px;
+  --rule-thick: 4px;
+
+  /* canvas */
+  --slide-w: 960px;
+  --slide-h: 540px;
+}
+
+/* Activist theme scope: apply data-theme="activist" on a slide root to flip the skin. */
+[data-theme="activist"] {
+  --text-title: var(--black);
+  --text-body: var(--black);
+  --fill-primary: var(--black);
+  --fill-deep: var(--black);
+  --hero: var(--signal);
+  --surface-page: var(--white);
 }

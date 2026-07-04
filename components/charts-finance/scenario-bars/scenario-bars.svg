@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784 200" font-family="Inter, Arial, sans-serif">
+  <!-- ============ case-design-system / charts-finance / scenario-bars ============
+       A compact navy bar chart for one scenario, with value labels on top and an
+       oval "X% CAGR" arrow annotation over the bars (ref08). Compose several down
+       or across a slide to compare scenarios; highlight rings the chosen one with
+       a dashed border. Concrete hex so this pastes into PowerPoint as editable,
+       portable shapes. -->
+
+  <defs>
+    <marker id="sb-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#5B6B79"/>
+    </marker>
+  </defs>
+
+  <!-- panel 1: base case (default) -->
+  <g>
+    <rect x="0" y="0" width="380" height="200" rx="6" fill="#F4F6F7" stroke="#C9D2DA" stroke-width="1"/>
+    <text x="12" y="14" font-size="10" font-style="italic" fill="#5B6B79">Revenues in &#8364;m</text>
+    <line x1="56.5" y1="108.7" x2="341.3" y2="34" stroke="#5B6B79" stroke-width="2" marker-end="url(#sb-arrow)"/>
+    <ellipse cx="190" cy="46" rx="44" ry="14" fill="#FFFFFF" stroke="#5B6B79" stroke-width="1"/>
+    <text x="190" y="46" font-size="13" font-weight="700" fill="#14233A" text-anchor="middle" dominant-baseline="central">30% CAGR</text>
+
+    <rect x="34.3" y="114.7" width="44.5" height="55.3" fill="#1F3A52"/>
+    <text x="56.5" y="107.7" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">99</text>
+    <text x="56.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2025e</text>
+
+    <rect x="123.3" y="97.9" width="44.5" height="72.1" fill="#1F3A52"/>
+    <text x="145.5" y="90.9" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">129</text>
+    <text x="145.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2026e</text>
+
+    <rect x="212.3" y="76.1" width="44.5" height="93.9" fill="#1F3A52"/>
+    <text x="234.5" y="69.1" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">168</text>
+    <text x="234.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2027e</text>
+
+    <rect x="301.3" y="48.2" width="44.5" height="121.8" fill="#1F3A52"/>
+    <text x="323.5" y="41.2" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">218</text>
+    <text x="323.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2028e</text>
+
+    <line x1="12" y1="170" x2="368" y2="170" stroke="#C9D2DA" stroke-width="1.5"/>
+  </g>
+
+  <!-- panel 2: bull case (highlight) -->
+  <g transform="translate(404,0)">
+    <rect x="0" y="0" width="380" height="200" rx="6" fill="#E4EEF6" stroke="#C0473E" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="12" y="14" font-size="10" font-style="italic" fill="#5B6B79">Revenues in &#8364;m</text>
+    <line x1="56.5" y1="134.2" x2="341.3" y2="34" stroke="#5B6B79" stroke-width="2" marker-end="url(#sb-arrow)"/>
+    <ellipse cx="190" cy="46" rx="44" ry="14" fill="#FFFFFF" stroke="#5B6B79" stroke-width="1"/>
+    <text x="190" y="46" font-size="13" font-weight="700" fill="#14233A" text-anchor="middle" dominant-baseline="central">60% CAGR</text>
+
+    <rect x="34.3" y="140.2" width="44.5" height="29.8" fill="#1F3A52"/>
+    <text x="56.5" y="133.2" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">99</text>
+    <text x="56.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2025e</text>
+
+    <rect x="123.3" y="122.5" width="44.5" height="47.5" fill="#1F3A52"/>
+    <text x="145.5" y="115.5" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">158</text>
+    <text x="145.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2026e</text>
+
+    <rect x="212.3" y="93.9" width="44.5" height="76.1" fill="#1F3A52"/>
+    <text x="234.5" y="86.9" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">253</text>
+    <text x="234.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2027e</text>
+
+    <rect x="301.3" y="48.2" width="44.5" height="121.8" fill="#1F3A52"/>
+    <text x="323.5" y="41.2" font-size="12" font-weight="700" fill="#14233A" text-anchor="middle">405</text>
+    <text x="323.5" y="186" font-size="11" font-weight="700" fill="#14233A" text-anchor="middle">2028e</text>
+
+    <line x1="12" y1="170" x2="368" y2="170" stroke="#C9D2DA" stroke-width="1.5"/>
+  </g>
+</svg>

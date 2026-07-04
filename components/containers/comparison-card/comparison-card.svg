@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 848 230" font-family="Inter, Arial, sans-serif">
+  <!-- ============ case-design-system / containers / comparison-card ============
+       A card in a comparison / competition grid: accent top-border, optional
+       logo/media slot, a hero stat, and a descriptor (ref06). Grey the field,
+       colour the hero: only the hero card gets the accent top-border and stat
+       colour, peers stay navy. Concrete hex so this pastes into PowerPoint as
+       editable, portable shapes. The media slot is a placeholder -- drop a real
+       brand logo in here, never redraw one. -->
+
+  <!-- card 1: peer (navy, not hero) -->
+  <rect x="0" y="0" width="260" height="230" rx="6" fill="#FFFFFF" stroke="#C9D2DA" stroke-width="1"/>
+  <rect x="1" y="1" width="258" height="3" fill="#1F3A52"/>
+  <rect x="1" y="4" width="258" height="92" fill="#F4F6F7"/>
+  <line x1="1" y1="96" x2="259" y2="96" stroke="#C9D2DA" stroke-width="1"/>
+  <text x="130" y="54" font-size="11" font-weight="600" letter-spacing="0.6" fill="#5B6B79" text-anchor="middle">LOGO</text>
+  <text x="20" y="122" font-size="13" font-weight="700" fill="#14233A">Peer A</text>
+  <text x="20" y="154" font-size="28" font-weight="800" fill="#1F3A52">42%</text>
+  <text x="20" y="168" font-size="11" font-weight="600" letter-spacing="0.6" fill="#5B6B79">GROSS MARGIN</text>
+  <text x="20" y="190" font-size="12.5" fill="#14233A">Scaled distribution but</text>
+  <text x="20" y="206" font-size="12.5" fill="#14233A">limited brand pull.</text>
+
+  <!-- card 2: hero (accent top-border and stat colour) -->
+  <rect x="294" y="0" width="260" height="230" rx="6" fill="#FFFFFF" stroke="#C9D2DA" stroke-width="1"/>
+  <rect x="295" y="1" width="258" height="3" fill="#2E6FB0"/>
+  <rect x="295" y="4" width="258" height="92" fill="#F4F6F7"/>
+  <line x1="295" y1="96" x2="553" y2="96" stroke="#C9D2DA" stroke-width="1"/>
+  <text x="424" y="54" font-size="11" font-weight="600" letter-spacing="0.6" fill="#5B6B79" text-anchor="middle">LOGO</text>
+  <text x="314" y="122" font-size="13" font-weight="700" fill="#14233A">Our Company</text>
+  <text x="314" y="154" font-size="28" font-weight="800" fill="#2E6FB0">58%</text>
+  <text x="314" y="168" font-size="11" font-weight="600" letter-spacing="0.6" fill="#5B6B79">GROSS MARGIN</text>
+  <text x="314" y="190" font-size="12.5" fill="#14233A">Vertical integration drives</text>
+  <text x="314" y="206" font-size="12.5" fill="#14233A">structurally higher margin.</text>
+
+  <!-- card 3: peer (navy, not hero) -->
+  <rect x="588" y="0" width="260" height="230" rx="6" fill="#FFFFFF" stroke="#C9D2DA" stroke-width="1"/>
+  <rect x="589" y="1" width="258" height="3" fill="#1F3A52"/>
+  <rect x="589" y="4" width="258" height="92" fill="#F4F6F7"/>
+  <line x1="589" y1="96" x2="847" y2="96" stroke="#C9D2DA" stroke-width="1"/>
+  <text x="718" y="54" font-size="11" font-weight="600" letter-spacing="0.6" fill="#5B6B79" text-anchor="middle">LOGO</text>
+  <text x="608" y="122" font-size="13" font-weight="700" fill="#14233A">Peer B</text>
+  <text x="608" y="154" font-size="28" font-weight="800" fill="#1F3A52">37%</text>
+  <text x="608" y="168" font-size="11" font-weight="600" letter-spacing="0.6" fill="#5B6B79">GROSS MARGIN</text>
+  <text x="608" y="190" font-size="12.5" fill="#14233A">Broad SKU count but</text>
+  <text x="608" y="206" font-size="12.5" fill="#14233A">thinner unit economics.</text>
+</svg>

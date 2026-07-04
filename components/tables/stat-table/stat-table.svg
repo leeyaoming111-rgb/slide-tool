@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 156" font-family="Inter, Arial, sans-serif">
+  <!-- ============ case-design-system / tables / stat-table ============
+       A clean two-column label/value list (Current Price, Shares, Market Cap, EV).
+       Numbers right-aligned, decimals aligned, hairline row dividers, no outer
+       border, no zebra. Concrete hex so this pastes into PowerPoint as editable,
+       portable shapes. -->
+
+  <g font-size="13" fill="#14233A">
+    <text x="0" y="26" font-weight="400">Current Price (24/2/26)</text>
+    <text x="420" y="26" font-weight="600" text-anchor="end" font-variant-numeric="tabular-nums">$4.90</text>
+    <line x1="0" y1="40" x2="420" y2="40" stroke="#C9D2DA" stroke-width="1"/>
+
+    <text x="0" y="66" font-weight="400">Fully Diluted Shares</text>
+    <text x="420" y="66" font-weight="600" text-anchor="end" font-variant-numeric="tabular-nums">200,322,192</text>
+    <line x1="0" y1="80" x2="420" y2="80" stroke="#C9D2DA" stroke-width="1"/>
+
+    <text x="0" y="106" font-weight="400">Market Cap</text>
+    <text x="420" y="106" font-weight="600" text-anchor="end" font-variant-numeric="tabular-nums">$982m</text>
+    <line x1="0" y1="120" x2="420" y2="120" stroke="#C9D2DA" stroke-width="1"/>
+
+    <text x="0" y="146" font-weight="700">Enterprise Value</text>
+    <text x="420" y="146" font-weight="700" text-anchor="end" font-variant-numeric="tabular-nums">$1,069m</text>
+  </g>
+</svg>
