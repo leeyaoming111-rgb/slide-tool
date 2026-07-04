@@ -10,6 +10,18 @@ finance-weighted. Two visual families: corporate (default) and activist.
 3. `references/REFERENCES.md` — inspiration catalog.
 4. `builder/BUILDER_SKILL.md` — the component builder prompt.
 
+## Incoming from Claude Design ("Send to Claude Code Web")
+When this session was started from Claude Design, files from the design project may be present
+in the workspace. On session start, check for any new or updated design files and:
+
+1. **Reference images** → move to `references/` with naming pattern `ref##_short-description.png`,
+   and add a row to `references/REFERENCES.md`.
+2. **Component SVGs/PNGs** → place in `components/<category>/<name>/` alongside a `spec.md`.
+3. **Token or rule updates** → merge into `tokens/tokens.json` / `tokens/tokens.css` /
+   `docs/CHART_RULES.md` as appropriate.
+4. **Skills or builder prompts** → place in `builder/`.
+5. Commit and push immediately after filing everything.
+
 ## Auto-sync rule (CRITICAL)
 After adding, updating, or deleting ANY file in this repo — reference images, component SVGs,
 specs, tokens, docs, skills, or this file itself — you MUST commit and push before ending the
