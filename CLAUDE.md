@@ -50,6 +50,7 @@ components/
     <name>.png   preview render
     spec.md      what, when, anatomy, re-data instructions
 builder/         BUILDER_SKILL.md (component builder prompt)
+templates/       chart-templates.xlsx (native Excel chart templates) + generator script
 ```
 
 ## When adding reference images
