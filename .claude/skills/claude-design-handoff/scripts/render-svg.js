@@ -3,6 +3,8 @@
 // components/charts-finance/football-field/football-field.png is 1440x810 for a
 // 960x540 viewBox). Requires the environment's pre-installed Playwright + Chromium
 // (see the note in ../SKILL.md about the require() path workaround).
+// NOTE: components use font-family "Calibri, Carlito, Arial, sans-serif". Install Carlito
+// first (sudo apt-get install -y fonts-crosextra-carlito) or text silently falls back to Arial.
 //
 // Usage: node render-svg.js <input.svg> <output.png>
 const fs = require('fs');

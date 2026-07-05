@@ -41,7 +41,7 @@
   --bull: var(--positive);
 
   /* type */
-  --font: Inter, Arial, sans-serif;
+  --font: Calibri, Carlito, Arial, sans-serif; /* Auckland-native face; Carlito = metric-identical open Calibri */
   --font-serif: "Source Serif 4", Georgia, serif;
 
   /* type weights */

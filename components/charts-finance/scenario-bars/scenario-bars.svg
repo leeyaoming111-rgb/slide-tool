@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784 200" font-family="Inter, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 784 200" font-family="Calibri, Carlito, Arial, sans-serif">
   <!-- ============ case-design-system / charts-finance / scenario-bars ============
        A compact navy bar chart for one scenario, with value labels on top and an
        oval "X% CAGR" arrow annotation over the bars (ref08). Compose several down
