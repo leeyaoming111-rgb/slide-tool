@@ -7,8 +7,9 @@ finance-weighted. Two visual families: corporate (default) and activist.
 ## Always read before building
 1. `tokens/tokens.json` — palette, type scale, spacing.
 2. `docs/CHART_RULES.md` — every rule is a hard default.
-3. `references/REFERENCES.md` — inspiration catalog.
-4. `builder/BUILDER_SKILL.md` — the component builder prompt.
+3. `docs/COPY_RULES.md` — how finance slide copy is worded (the Auckland voice).
+4. `references/REFERENCES.md` — inspiration catalog.
+5. `builder/BUILDER_SKILL.md` — the component builder prompt.
 
 ## Incoming from Claude Design ("Send to Claude Code Web")
 If the session includes a full handoff bundle (a `README.md` + `chats/` + `project/` workspace,
@@ -42,7 +43,7 @@ Do not leave uncommitted work. The repo is the single source of truth for the de
 ## Repo structure conventions
 ```
 tokens/          tokens.json + tokens.css (palette, type, spacing)
-docs/            CHART_RULES.md (house formatting rules)
+docs/            CHART_RULES.md (house formatting rules) + COPY_RULES.md (wording rules)
 references/      inspiration images + REFERENCES.md catalog + model-reference.xlsx
 components/
   <category>/<name>/
@@ -60,7 +61,9 @@ builder/         BUILDER_SKILL.md (component builder prompt)
 - Follow the output contract in `builder/BUILDER_SKILL.md`.
 - Every component needs: `<name>.svg`, `<name>.png`, and `spec.md`.
 - Use concrete hex colours from `tokens/tokens.json`, not CSS variables.
-- Font stack: `Inter, Arial, sans-serif`.
+- Font stack: `Calibri, Carlito, Arial, sans-serif` (Auckland-native face; Carlito is the
+  metric-identical open Calibri, needed for Linux/CI renders: `fonts-crosextra-carlito`).
+- Slide copy wording follows `docs/COPY_RULES.md`.
 
 ## When updating tokens or rules
 - Keep `tokens.json` and `tokens.css` in sync.

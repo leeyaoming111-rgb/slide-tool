@@ -4,6 +4,9 @@ This is the file that turns "the hard part" into a default. Every preference abo
 chart should look, once written here, gets applied the same way every time instead of being
 re-requested. Add to it whenever a new preference surfaces.
 
+These rules cover how an exhibit **looks**; how its copy is **worded** (titles, numbers,
+takeaways, the Auckland voice) lives in `COPY_RULES.md`.
+
 Acronyms used below: average revenue per user (ARPU), compound annual growth rate (CAGR),
 discounted cash flow (DCF), earnings before interest, tax, depreciation and amortisation (EBITDA).
 

@@ -22,7 +22,7 @@ new colours, fonts, or formatting conventions.
 ## Output contract
 For component `<name>` in category `<cat>`, produce:
 - `components/<cat>/<name>/<name>.svg` — concrete hex colours (not CSS variables) so the shape is
-  portable into PowerPoint; `font-family="Inter, Arial, sans-serif"`; `viewBox` on a 960x540 frame
+  portable into PowerPoint; `font-family="Calibri, Carlito, Arial, sans-serif"`; `viewBox` on a 960x540 frame
   unless the component is naturally a different size.
 - `components/<cat>/<name>/<name>.png` — a render for preview.
 - `components/<cat>/<name>/spec.md` — what it is, when to use, anatomy, how to re-data, and the

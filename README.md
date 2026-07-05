@@ -34,9 +34,10 @@ builder/       BUILDER_SKILL.md           (prompt for adding components later)
 Same foundation, different skin. Build corporate first; activist variants follow.
 
 ## Type note
-Inter (with Arial as the paste-safe fallback) is used deliberately. Consulting decks reward
-restraint and legibility over characterful display fonts, and Arial fallback means a pasted shape
-never breaks on a machine without Inter installed. Optional Source Serif 4 for emphasis lines.
+Calibri (with Carlito, then Arial, as paste-safe fallbacks) is used deliberately: it is the
+UoA Case Programme's native face, so components read as Auckland-model slides the moment they
+are pasted in. Carlito is the metric-identical open-source Calibri clone, which keeps Linux/CI
+renders pixel-faithful (`fonts-crosextra-carlito`). Optional Source Serif 4 for emphasis lines.
 
 ## Status
 v0.2 — tokens, chart rules, reference library, and all four v1 finance charts are in (football
